@@ -1,0 +1,185 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.testbutton {
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 9px 1px 10px #F9F9F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 0px solid #A3A3A3;
+    background: #F5F5F5;
+  }
+  .testbutton:hover {
+    color: #000000 !important;
+    background: #FFFFFF;
+  }
+
+.jars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.jar {
+    border: 1px solid #E2E2E2;
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px #E2E2E2;
+    transition: .3s ease;
+  }
+  
+  .jar:hover {
+    box-shadow: 0px 4px 8px 0px #E2E2E2;
+  }
+
+.hidden {
+    display: none;
+    
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-it {
+    0% {
+       transform: translate(0);
+    }
+    20% {
+       transform: translate(-2px, 2px);
+    }
+    40% {
+       transform: translate(-2px, -2px);
+    }
+    60% {
+       transform: translate(2px, 2px);
+    }
+    80% {
+       transform: translate(2px, -2px);
+    }
+    to {
+       transform: translate(0);
+    }
+ }
+
+ .custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+    margin-left: 45%;
+}
+
+.input_contianer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+  
+
+	font-size: 17px;
+	font-style: italic;
+	padding: 11px 9px;
+	width: 60%;
+	padding-left: 35px;
+	/* outline: none; */
+	background: #FFFFFF;
+	color: #000000;
+	border: 0px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+    
+}
+
+.input:focus {
+	background: #F2F2F2;
+	border: 1px solid #5A7EC7;
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #DDDDDD;
+}
+
+.svg_icon {
+	position: absolute;
+	left: 10px;
+	fill: #4660DC;
+	width: 17px;
+	height: 17px;
+}
